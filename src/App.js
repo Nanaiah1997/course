@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+//import Funda from "./component/Funda";
+import Navbar from "./component/navbar";
+import ProductListing from "./component/ProductListing";
+import "./App.css";
+import { BrowserRouter, Route ,Routes} from "react-router-dom";
+import ProductDetail from "./component/ProductDetail";
+//import { useSelector } from "react-redux";
+
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   /*<>
+      <Navbar/>
+      <ProductListing/>
+    </>*/
+ 
+
+   <BrowserRouter>
+    <Navbar/>
+      <Routes>
+        <Route  path="/" element={<ProductListing/>}/>
+        
+      
+         <Route  path="/product/aaa" element={<ProductDetail />}/>
+         
+         
+        
+      </Routes>
+  </BrowserRouter>
   );
 }
 
