@@ -2,12 +2,14 @@ import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import ProductComponent from './ProductComponent'
-import { setProducts } from '../redux/action/productAction'
+import { setProducts, loadProduct } from '../redux/action/productAction'
+import LoadingCmp from './LoadingCmp'
 
 const ProductListing = () => {
     const products = useSelector((state)=>state)
     //const [cor, getCor] = useState([]);
     const dispatch = useDispatch();
+    const load = useSelector((state)=>state.load)
 
   /*  const fetchProduct = ()=>{
         fetch("https://jsonplaceholder.typicode.com/posts")
@@ -28,6 +30,7 @@ const ProductListing = () => {
             console.log("Err",err);
         });
         dispatch(setProducts(response.data));
+        dispatch(loadProduct(false));
         console.log(response.data)
 
        
@@ -38,7 +41,11 @@ const ProductListing = () => {
     console.log(products)
   return (
     <>
-        <ProductComponent/>
+    {
+        load?<LoadingCmp/>:
+        <ProductComponent />
+    }
+        
     </>
   )
 }

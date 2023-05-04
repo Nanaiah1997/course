@@ -6,7 +6,7 @@ const ProductAbout = () => {
  const About = useSelector((state)=>state.product)
 
   return (
-    <div>ProductAbou</div>
+    <div>ProductAbout</div>
   )
 }
 

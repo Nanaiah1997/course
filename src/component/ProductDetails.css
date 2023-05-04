@@ -51,7 +51,7 @@ span{
     
     position: absolute;
     top: 12rem;
-    right: 15rem;
+    right: 13rem;
     border-radius: 1rem;
 }
 .detail-card{
@@ -101,7 +101,7 @@ span{
 
 .detail-btn button{
     margin: 0%;
-    margin-left: 22px;
+    margin-left: 11px;
     margin-bottom: 10px;
     align-items: center;
     border-radius: 8px;
@@ -119,6 +119,7 @@ span{
     display: flex;
     font-size: medium;
     font-weight:bold ;
+    cursor: pointer;
   
 }
 
@@ -167,4 +168,5 @@ ol{
     padding-top: 20px;
     margin-left: 40px;
     font-size: smaller;
+    padding-bottom: 30px;
 }

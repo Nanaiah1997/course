@@ -25,3 +25,14 @@ export const selectedProductReducer=(state={}, {type,payload})=>{
             //break;
         }
 }
+
+export const loadingReducer=(state= true, {type,payload})=>{
+    switch (type) {
+        case ActionType.LOADING:
+            return payload;
+    //break;
+        default:
+            return state;
+            //break;
+        }
+}

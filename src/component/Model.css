@@ -1,0 +1,117 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top: 0;
+  }
+  
+  .modalContainer {
+    margin-top: 0px;
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background-color:  #2e435a;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    position: fixed;
+    
+  }
+  
+  .modalContainer .title{
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+  }
+ 
+  .modalContainer .title input{
+    width: 500px;
+    height: 50px;
+    margin-top: 5px;
+    background-color: #2e435a;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .modalContainer .body{
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+  }
+ 
+  .modalContainer .body input{
+    width: 500px;
+    height: 50px;
+    margin-top: 5px;
+    background-color: #2e435a;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* .modalContainer .body {
+    flex: 50%;
+    display: block;
+    justify-content: center;
+    align-items: left;
+    font-size: 1.7rem;
+    text-align: center;
+  } */
+  
+  .modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Model-btn {
+    width: 500px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color:  #3ddf87;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+    background-color: crimson;
+  }
+  
+
+  /* .Model-btn{
+    
+    margin: 0%;
+    margin-left: 22px;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 30px;
+    text-align: center;
+    background-color: #3ddf87;
+    border: none;
+    cursor: pointer;
+  } */

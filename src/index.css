@@ -15,11 +15,29 @@ code {
     monospace;
 }
 
+nav{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  
+}
+
 .nav-list {
-  background-color: #0b233f;;
+  background-color: #0b233f;
+  margin: 0;
+  padding-top: 5px;
+  display: flex;
+  cursor: pointer;
+}
+
+.nav-list-1 {
+  background-color: #0b233f;
   margin: 0;
   display: flex;
+  cursor: pointer;
 }
+
+
 
 .nav-list :first-child{
   font-weight:bolder;
@@ -28,15 +46,31 @@ code {
 }
 
 
-.nav-list  li{
+.nav-list  li, .nav-list-1 li{
   color: white;
   padding:12px;
   list-style-type: none;
   font-weight: lighter;
 }
 
+
 .nav-list :nth-child(5){
  text-align: right;
+}
+
+.nav-button{
+  margin: 0%;
+  margin-left: 22px;
+  margin-bottom: 10px;
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 30px;
+  text-align: center;
+  background-color: #3ddf87;
+  border: none;
+  cursor: pointer;
 }
 
 

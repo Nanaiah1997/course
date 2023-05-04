@@ -8,8 +8,15 @@ export const setProducts= (products) => {
 
 export const selectedProduct= (product) => {
     return{
-        type: ActionType.SETECTED_PRODUCT,
+        type: ActionType.SELECTED_PRODUCT,
         payload: product
     };
 };
+export const loadProduct= (loadings) => {
+    return{
+        type: ActionType.LOADING,
+        payload: loadings
+    };
+};
+
 
